@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variable webpage!</title>
+        <style>
+            body {
+                background-color: palegreen;
+                text-align: center;
+            }
+
+            h1 , p {
+                color: white;
+                text-shadow: 2px 2px rgb(23, 179, 23);
+            }
+
+            p {
+                font-size: 30px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>JavaScript Variables</h1>
+        <p>Sum Of two numbers</p>
+        <p id="sum"></p>
+
+        <script>
+            var num1 = 67
+            var num2 = 33
+            var add = num1 + num2
+
+            document.getElementById("sum").innerHTML= "The total sum is: " + add;
+        </script>
+    </body>
+</html>

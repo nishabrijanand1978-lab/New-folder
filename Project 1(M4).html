@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Simple Calculator</title>
+        <style>
+            body {
+                text-align: center;
+                background: linear-gradient(to bottom, rgb(186, 231, 231), rgb(98, 213, 213), rgb(19, 148, 148) );
+                color: turquoise;
+                text-shadow: 2px 2px 2px rgb(5, 74, 67);
+            }
+
+            h1 {
+                font-family: comic sans;
+                font-size: 40px;
+            }
+
+            p {
+                font-family: comic sans;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Welcome to the Simple Calculator</h1>
+        <p>Add, Subtract, Multiply, Divide and Play with numbers!!</p>
+        <p id="add"></p>
+        <p id="subtract"></p>
+        <p id="multiply"></p>
+        <p id="divide"></p>
+
+        <script>
+            var num1 = 44
+            var num2 = 2
+
+            var plus = num1 + num2
+            var minus = num1 - num2
+            var multiplication = num1 * num2
+            var division = num1 / num2
+
+            document.getElementById("add").innerHTML = "The sum of the numbers is:" + plus;
+            document.getElementById("subtract").innerHTML = "The difference of the numbers is:" + minus;
+            document.getElementById("multiply").innerHTML = "The product of the numbers is:" + multiplication;
+            document.getElementById("divide").innerHTML = "The quotient of the numbers is:" + division;
+        </script>
+    </body>
+</html>
